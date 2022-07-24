@@ -1,0 +1,132 @@
+matthewayoob.css
+/* The classes */
+
+body {
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+    min-height: 596px;
+    margin: 0;
+    box-sizing: border-box;
+    background:  #FEFCFF;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    margin: auto;
+
+    max-width: 60%;
+    width: 100%;
+    height: auto;
+    padding: 0 24px;
+}
+
+hr {
+    display: block;
+    box-sizing: border-box;
+
+    height: 40px;
+    margin: 0;
+    border: none;
+    border-top: 1px solid #808080;
+    background: none;
+    margin-top: 22px;
+    display: flex;
+    justify-content: center;
+}
+
+ul.links {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin: 0; 
+    padding: 0;
+    list-style: none;
+}
+
+ul.links>li {
+    margin: auto;
+    font-size: 16px;
+    font-family: 'PT Serif', Georgia, serif;
+    font-style: normal;
+    font-weight: normal;
+    color: #C70039;
+    line-height: 32px;
+}
+
+/* Text */
+
+h1 {
+    font-size: 60px;
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-style: normal;
+    font-weight: bold;
+    color: #2E3542;
+    line-height: 40px;
+    margin: auto;
+    padding: 30px 0px 30px 0px;
+}
+
+p {
+    font-size: 16px;
+    font-family: 'PT Serif', Georgia, serif;
+    font-style: normal;
+    font-weight: normal;
+    color: #2E3542;
+    line-height: 32px;
+}
+
+::selection {
+    background: #fcdcde;
+    color: #000000; 
+}
+  
+::-moz-selection {
+    background: #fcdcde;
+    color: #C70039; 
+}
+
+a {
+    color: #C70039;
+}
+
+a:hover {
+    color:#adb1ff;
+}
+
+a.footer {
+    color: #969AA0;
+}
+
+a.footer:hover {
+    color: #C0C2C6;
+}
+
+/* Queries */
+
+@media only screen and (max-width: 400px) {
+    body {
+        height: auto;
+    }
+    .content {
+        justify-content: flex-start;
+        padding: 48px 24px;
+        max-width: 85% !important;
+    }
+img {
+    max-width: 80% !important;
+    height: auto !important;
+    align-self: center !important;
+}
+
+}
+
+}
